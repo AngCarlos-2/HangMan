@@ -3,25 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Principal</title>
-    <link href="css/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="jogoStyle.css">
+    <title>Jogo</title>
 </head>
 <body>
     <h1>Hangman</h1>
-    <div class="a-wrap">
-        <a class='botao' id="jogo" href="../jogo/jogoStyled.html">Jogar</a>
-        <a class='botao' href="../historico/historico.html">Histórico</a>
-    </div>
-    <div class='button-wrap'>
-        <a id="botao-sair" class="botao" href="about:blank">Sair</a>
-    </div>
-    <script src="menu.js"></script>
+    <p id="display-palavra"></p>
+    <p id="mensagem"></p>
+    <input type="text" id="entrada-letra" maxlength="1">
+    <br>
+    <a id="botao-tentar" class="botao">Tentar</a>
+    <a id="botao-historico" class="botao" href="../historico/historico.html">Histórico</a>
+    <a id="botao-sair" class="botao" href="about:blank">Sair</a>
+    <a id="retorna-menu" class="botao" href="../menu/menu.html">Retornar Menu</a>
+    <img src="../hangman-nobackground.png" alt="Hangman" class="imagem-direita">
+    <script src="jogo.js"></script>
 </body>
 </html>
